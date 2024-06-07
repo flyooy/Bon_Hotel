@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+@font-face {
+    font-family: Ubuntu-Medium;
+    src: url("../fonts/Ubuntu/Ubuntu-Medium.ttf");
+}
+
+html{
+    font-family: Ubuntu-Medium;
+}
+
+header {
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically if needed */
+    flex-direction: column;
+}
+
+header .logo_Bon{
+    margin: 6%;
+    position: center;
+    
+}
+
+header .search{
+    width: 2%;
+    vertical-align: middle;
+}
+
+header nav{
+    display: block;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+header nav a{
+    text-decoration: none;
+    color:#957554;
+    padding: 2%;
+    vertical-align: middle;
+}
+
+main .Hero_Back{
+    background-image: url("../img/images_simple_hotel_website/hero_image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100vw;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 5%;
+    
+}
+
+main .Hero_Back .box_text{
+  display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+padding: 3%;
+}
+
+main .Hero_Back .box_text h1{
+    font-size: 5rem;
+    margin-bottom: 45px; 
+}
+
+main .Hero_Back .box_text p {
+    margin-bottom: 45px; 
+    font-size: 1.5rem;
+}
+
+main .Hero_Back .box_text .btn{
+    padding: 2% 5%;
+    background-color: #DFAA5B;
+    height: 10%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    text-align: center;
+    margin: auto;
+}
+
+main .Hero_Back .box_text .btn p{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.Facilities .Central_text{
+    margin: 3%;
+    text-align: center;
+    color: #957554;
+}
+
+.Facilities .Horisont_position{
+    display: flex;
+    justify-content: space-around;
+    margin: 1%;
+    padding: 3%;
+}
+
+.Facilities img{
+    width: 55%;
+}
+
+.Facilities .Horisont_position p, .Vert_postion{
+    text-align: center;
+}
+
+.Facilities{
+    margin-bottom: 5%;
+}
+
+main .Rooms .Central_text{
+    margin: 3%;
+    text-align: center;
+    color: #957554;
+}
+
+main .Rooms .Back_Img{
+    background-image: url(../img/images_simple_hotel_website/standard_twin_room.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35vh;
+    width: 45vw;
+    margin-bottom: 20px; /* Отступ между блоками */
+    box-sizing: border-box; 
+    border-radius: 14px;
+    
+}
+
+main .Rooms .Back_Img_2{
+    background-image: url(../img/images_simple_hotel_website/standard_room.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35vh;
+    width: 45vw;
+    margin-bottom: 20px; /* Отступ между блоками */
+    box-sizing: border-box; 
+    border-radius: 14px;
+}
+
+main .Rooms .Back_Img_3{
+    background-image: url(../img/images_simple_hotel_website/standard_view_room.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35vh;
+    width: 45vw;
+    margin-bottom: 20px; /* Отступ между блоками */
+    box-sizing: border-box; 
+    border-radius: 14px;
+}
+
+main .Rooms .Back_Img_4{
+    background-image: url(../img/images_simple_hotel_website/deluxe_room.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35vh;
+    width: 45vw;
+    margin-bottom: 20px; /* Отступ между блоками */
+    box-sizing: border-box; 
+    border-radius: 14px;
+}
+
+.Rooms .Horisont_position {
+    margin: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    position: absolute;
+    
+}
+
+.Rooms .Horisont_position .Back_Img h2{
+    color: white;
+    position: relative;
+    top:205px;
+    left: 125px;
+    font-size: 1.4rem;
+}
+
+.Rooms .Horisont_position .Back_Img .btn{
+    padding: 2% 5%;
+    background-color: #DFAA5B;
+    height: 10%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    text-align: center;
+    margin: auto;
+    color: white;
+    font-size: 0.8rem;
+    position: relative;
+    top:215px;
+
+}
