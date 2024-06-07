@@ -81,10 +81,10 @@ main .Hero_Back .box_text p {
     font-size: 1.5rem;
 }
 
-main .Hero_Back .box_text .btn{
+ .btn{
     padding: 2% 5%;
     background-color: #DFAA5B;
-    height: 10%;
+    height: 7%;
     width: 30%;
     display: flex;
     justify-content: center;
@@ -122,74 +122,73 @@ main .Hero_Back .box_text .btn p{
 }
 
 .Facilities{
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 main .Rooms .Central_text{
-    margin: 3%;
+    margin: 1%;
     text-align: center;
     color: #957554;
 }
 
-main .Rooms .Back_Img{
-    background-image: url(../img/images_simple_hotel_website/standard_twin_room.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 35vh;
-    width: 45vw;
-    margin-bottom: 20px; /* Отступ между блоками */
-    box-sizing: border-box; 
-    border-radius: 14px;
-    
+.Horisont_position{
+    margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 150px;
 }
 
-main .Rooms .Back_Img_2{
-    background-image: url(../img/images_simple_hotel_website/standard_room.png);
+.Horisont_position article {
+    height: 45vh;
+    flex-basis: 35%;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    height: 35vh;
-    width: 45vw;
-    margin-bottom: 20px; /* Отступ между блоками */
-    box-sizing: border-box; 
-    border-radius: 14px;
-}
-
-main .Rooms .Back_Img_3{
-    background-image: url(../img/images_simple_hotel_website/standard_view_room.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 35vh;
-    width: 45vw;
-    margin-bottom: 20px; /* Отступ между блоками */
-    box-sizing: border-box; 
-    border-radius: 14px;
-}
-
-main .Rooms .Back_Img_4{
-    background-image: url(../img/images_simple_hotel_website/deluxe_room.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 35vh;
-    width: 45vw;
-    margin-bottom: 20px; /* Отступ между блоками */
-    box-sizing: border-box; 
-    border-radius: 14px;
-}
-
-.Rooms .Horisont_position {
-    margin: 4%;
+    border-radius: 10px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; 
-    position: absolute;
-    
-}
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
 
+  .Horisont_position article:hover {
+    box-shadow: 0 0 5px black;
+  }
+
+  .Horisont_position article:nth-of-type(1) {
+    background-image: url(../img/images_simple_hotel_website/standard_twin_room.png);
+  }
+  
+  .Horisont_position article:nth-of-type(2) {
+    background-image: url(../img/images_simple_hotel_website/standard_room.png);
+  }
+  
+  .Horisont_position article:nth-of-type(3) {
+    background-image: url(../img/images_simple_hotel_website/standard_view_room.png);
+  }
+  
+  .Horisont_position article:nth-of-type(4) {
+    background-image: url(../img/images_simple_hotel_website/deluxe_room.png);
+  }
+
+
+.Rooms .Horisont_position .Back_Img .centr_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    position: sticky;
+}
 .Rooms .Horisont_position .Back_Img h2{
     color: white;
-    position: relative;
-    top:205px;
-    left: 125px;
+
     font-size: 1.4rem;
 }
 
@@ -203,10 +202,85 @@ main .Rooms .Back_Img_4{
     align-items: center;
     border-radius: 12px;
     text-align: center;
-    margin: auto;
+    margin: 3% 2% 3% 2%;
     color: white;
     font-size: 0.8rem;
-    position: relative;
-    top:215px;
-
 }
+
+.Book_now .Central_text{
+    margin: 3%;
+    text-align: center;
+    color: #957554;
+}
+
+.Book_now .btn{
+   color: white; 
+   height: 2%;
+    width: 20%;
+    margin-bottom: 4%;
+}
+
+footer {
+    background-color: rgb(16, 15, 15);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 50px 60px 40px 60px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .contact img {
+    height: 40%;
+  }
+
+  .contact h5 {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .contact article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #email,
+#submit {
+  width: 100%;
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+}
+
+#submit {
+    background-color: rgba(223, 170, 91, 1);
+    color: white;
+  }
+  
